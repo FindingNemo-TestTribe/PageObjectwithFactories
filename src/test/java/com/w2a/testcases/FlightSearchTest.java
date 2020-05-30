@@ -22,7 +22,7 @@ public class FlightSearchTest {
 	
 	@Test(dataProviderClass=Utilities.class,dataProvider="dp")
 	public void flightSearchTest(Hashtable<String,String> data) {
-		
+		 
 		
 		System.out.println("Printing no of adults and children : "+data.get("noOfAdults")+"---"+ data.get("noOfChildern"));
 		

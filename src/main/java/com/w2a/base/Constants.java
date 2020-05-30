@@ -8,8 +8,5 @@ public class Constants {
 	public static final String testsiteurl = "http://expedia.co.in";
 	public static long implicitwait=10;
 	
-	
-	//locators
-	
-
+		
 }
