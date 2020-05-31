@@ -20,14 +20,15 @@ public class TopNavigation {
 		
 	}
 	
-	public SigninPage gotoSignIn(){
+	/*public SigninPage gotoSignIn() throws InterruptedException{
 		
+		Thread.sleep(5000);
 		Page.click(topNavigation.account);
-		Page.click(topNavigation.signinBtn);
+		//Page.click(topNavigation.signinBtn);
 		
 		return new SigninPage();
 		
-	}
+	}*/
 
 	public void gotoCreateAccount(){
 		

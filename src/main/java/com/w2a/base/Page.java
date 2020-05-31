@@ -42,6 +42,7 @@ public class Page {
 	public static ExtentTest test;
 	public static String browser;
 	public static TopNavigation topNav;
+	public static Object signin;
 	
 	
 	public static void initConfiguration(){
@@ -81,6 +82,7 @@ public class Page {
 		wait = new WebDriverWait()*/
 		topNav = new TopNavigation(driver);
 	
+	
 	}
 	
 	
@@ -103,7 +105,12 @@ public class Page {
 	}
 	
 	
-	
+	public static boolean isElementPresent(WebElement element) {
+		if(element.isDisplayed())
+			return true;
+		else
+			return false;
+	}
 
 	
 	public static void quitBrowser(){

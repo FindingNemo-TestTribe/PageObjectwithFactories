@@ -8,12 +8,12 @@ public class TopNavigationLocators {
 
 	
 	
-	@FindBy(css="#header-account-menu")
+	@FindBy(xpath = "//p[text()=' Login or Create Account']")
 	public WebElement account;
-	@FindAll({
+	/*@FindAll({
 		@FindBy(css="#header-account-signin-button"),
 		@FindBy(xpath = "//*[contains(text(),'Sign In')]")
 	})
-	public WebElement signinBtn;
+	public WebElement signinBtn;*/
 	
 }
