@@ -1,0 +1,2 @@
+Execution starts from LoginTest file which is located inside testcases package i.e src\test\java\com\w2a\testcases\LoginTest.java.
+For additional information about framework kindly check docx filed named as Page Object with Page Factory Model.docx in repo.
