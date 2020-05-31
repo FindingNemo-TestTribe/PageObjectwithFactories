@@ -89,8 +89,8 @@ public class Page {
 	public static void click(WebElement element) {
 
 		element.click();
-		log.debug("Clicking on an Element : "+element);
-		test.log(LogStatus.INFO, "Clicking on : " + element);
+		//log.debug("Clicking on an Element : "+element);
+		//test.log(LogStatus.INFO, "Clicking on : " + element);
 	}
 	
 	

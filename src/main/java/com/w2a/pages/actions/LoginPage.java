@@ -19,8 +19,8 @@ public class LoginPage extends Page {
 	
 	public LoginPage() {
 	this.login = new LoginPageLocators();
-	AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver,10);
-	PageFactory.initElements(factory, this.login);
+	//AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver,10);
+	PageFactory.initElements(driver, this.login);
 }
 	
 	public boolean loginPageCheck(){
@@ -28,13 +28,13 @@ public class LoginPage extends Page {
 		return elementCheck;
 	}
 	
-	public LoginPage login(){
+	public LoginPage login(String username, String password){
 		click(login.loginIntoAccount);
-		type(login.email,Constants.userName);
+		type(login.email,username);
 		click(login.continueButton);
 //		JavascriptExecutor js = (JavascriptExecutor)driver;
 //		js.executeScript("arguments[0].click();",login.continueButton);
-		type(login.password,Constants.password);
+		type(login.password,password);
 		click(login.loginButton);
 		click(login.closeModalPopup);
 		return this;
